@@ -1,0 +1,614 @@
+/* ===========================
+   GLOBAL
+=========================== */
+html{
+    scroll-behavior: smooth;
+}
+nav{
+
+    position:sticky;
+
+    top:0;
+
+    background:white;
+
+    z-index:1000;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.about{
+
+    background:#F8FAFC;
+
+}
+.skills{
+
+    background:white;
+
+}
+.projects{
+
+    background:#F8FAFC;
+
+}
+.contact{
+
+    background:white;
+
+}
+.skill-card:hover,
+.project-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,.18);
+
+}
+.availability{
+    color:#16a34a;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    color:#222;
+    background:#ffffff;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 80px;
+
+}
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:bold;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:black;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#2563eb;
+
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px;
+
+    gap:70px;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:340px;
+
+    height:340px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    box-shadow:0px 10px 30px rgba(0,0,0,.25);
+    object-fit: cover;
+    object-position: center top;
+
+
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.hero-content h1{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content h3{
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    line-height:1.8;
+
+    max-width:500px;
+
+    margin-bottom:30px;
+
+}
+
+.hero-content button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.hero-content button:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:70px;
+
+    padding:80px;
+
+}
+
+.about-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-image img{
+
+    width:320px;
+
+    border-radius:20px;
+
+    box-shadow:0px 10px 25px rgba(0,0,0,.2);
+
+}
+
+.about-content{
+
+    flex:1;
+
+}
+
+.about-content h2{
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+.about-content h3{
+
+    margin-top:25px;
+
+    color:#2563eb;
+
+}
+
+.about-content p{
+
+    line-height:1.8;
+
+    margin-top:10px;
+
+}
+
+.about-content button{
+
+    margin-top:35px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.about-content button:hover{
+
+    background:#1d4ed8;
+
+}
+.hero-image img{
+    object-fit: cover;
+    object-position: center top;
+}
+/* ================= SKILLS ================= */
+
+.skills{
+
+    padding:80px;
+
+    text-align:center;
+
+}
+
+.skills h2{
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+}
+
+.skills-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.skill-card{
+
+    width:220px;
+
+    padding:30px;
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.skill-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+/* ================= PROJECTS ================= */
+
+.projects{
+
+padding:80px;
+
+text-align:center;
+
+}
+
+.project-container{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-top:50px;
+
+}
+
+.project-card{
+
+width:320px;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.project-card button{
+
+margin-top:20px;
+
+padding:12px 25px;
+
+background:#2563eb;
+
+border:none;
+
+color:white;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+.contact{
+
+padding:80px;
+
+text-align:center;
+
+}
+
+.contact h2{
+
+margin-bottom:30px;
+
+font-size:40px;
+
+}
+
+.contact p{
+
+margin:15px;
+
+font-size:18px;
+
+}
+footer{
+
+background:#2563eb;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+margin-top:50px;
+
+}
+.skill-card i{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+.skill-card{
+
+    width:220px;
+
+    min-height:180px;
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    
+
+
+}
+.html-icon{
+    color:#E34F26;
+}
+
+.css-icon{
+    color:#1572B6;
+}
+
+.js-icon{
+    color:#F7DF1E;
+}
+
+.java-icon{
+    color:#007396;
+}
+
+.git-icon{
+    color:#F05032;
+}
+
+.node-icon{
+    color:#339933;
+}
+
+.project-card i{
+
+    font-size:50px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.tech-stack{
+
+    color:gray;
+
+    font-size:14px;
+
+    margin:15px 0;
+
+}
+.projects{
+
+margin-top:120px;
+
+}
+.contact-info{
+
+    margin-top:30px;
+
+}
+
+.contact-info p{
+
+    font-size:20px;
+
+    margin:20px 0;
+
+}
+
+.contact-info i{
+
+    margin-right:15px;
+
+    font-size:24px;
+
+}
+.email-icon{
+
+    color:#EA4335;
+
+}
+
+.linkedin-icon{
+
+    color:#0A66C2;
+
+}
+
+.github-icon{
+
+    color:#181717;
+
+}
+.contact-info a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-weight:500;
+
+}
+
+.contact-info a:hover{
+
+    color:#2563eb;
+
+}
+.skills{
+
+background:#F8FAFC;
+
+}
+.projects{
+
+background:white;
+
+}
+.contact{
+
+background:#F8FAFC;
+
+}
+
