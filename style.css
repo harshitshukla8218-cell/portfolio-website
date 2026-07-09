@@ -268,17 +268,17 @@ nav{
     justify-content:center;
 
 }
-
 .about-image img{
 
-    width:320px;
+    width:100%;
+
+    max-width:420px;
 
     border-radius:20px;
 
-    box-shadow:0px 10px 25px rgba(0,0,0,.2);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 
 }
-
 .about-content{
 
     flex:1;
@@ -656,3 +656,325 @@ background:#F8FAFC;
 
 }
 
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+    /* General */
+
+    body{
+        overflow-x:hidden;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+    /* Navbar */
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    /* Hero */
+
+   .hero{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    gap:30px;
+    }
+
+    .hero-image,
+    .hero-content{
+        flex:none;
+        width:100%;
+    }
+
+    .hero-image{
+        order:1;
+    }
+
+    .hero-content{
+        order:2;
+    }
+
+    .hero-image img,
+    .profile{
+        width:220px;
+        height:220px;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .hero-content h3{
+        font-size:24px;
+    }
+
+    .hero-content p{
+        max-width:100%;
+        padding:0 10px;
+    }
+
+    .hero-content button{
+        width:220px;
+        margin-top:30px;
+    }
+
+    /* About */
+
+    .about{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    gap:30px;
+    }
+
+    .about-image,
+    .about-content{
+        flex:none;
+        width:100%;
+    }
+
+    .about-image img{
+        width:100%;
+        max-width:250px;
+        border-radius:20px;
+    }
+
+    .about-content h2{
+        font-size:32px;
+    }
+
+    .about-content p{
+        padding:0 10px;
+    }
+
+    /* Skills */
+
+    .skills{
+        padding:50px 20px;
+    }
+
+    .skills h2{
+        font-size:32px;
+        margin-bottom:35px;
+    }
+
+    .skills-container{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .skill-card{
+        width:100%;
+        max-width:300px;
+    }
+
+    /* Projects */
+
+    .projects{
+        padding:50px 20px;
+    }
+
+    .projects h2{
+        font-size:32px;
+    }
+
+   .project-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    }
+
+    .project-card{
+        width:100%;
+        max-width:320px;
+        padding:25px;
+    }
+
+    /* Contact */
+
+    .contact{
+        padding:50px 20px;
+    }
+
+    .contact h2{
+        font-size:32px;
+    }
+
+    .contact-info{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:18px;
+    }
+
+    .contact-info p{
+        font-size:18px;
+    }
+
+    /* Footer */
+
+    footer{
+        padding:20px;
+        font-size:15px;
+    }
+    .hero-content,
+    .hero-image,
+    .about-content,
+    .about-image{
+    width:100%;
+    }
+
+}
+.active{
+
+    color:#2563eb !important;
+
+}
+
+.about,
+.skills,
+.projects,
+.contact,
+.skill-card,
+.project-card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+#topBtn{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+padding:12px 16px;
+
+border:none;
+
+background:#2563eb;
+
+color:white;
+
+border-radius:50%;
+
+cursor:pointer;
+
+display:none;
+
+font-size:18px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+background:#1d4ed8;
+
+}
+.contact form{
+
+display:flex;
+
+flex-direction:column;
+
+max-width:600px;
+
+margin:40px auto;
+
+gap:20px;
+
+}
+
+.contact input,
+.contact textarea{
+
+padding:15px;
+
+font-size:16px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+outline:none;
+
+}
+
+.contact textarea{
+
+resize:none;
+
+}
+
+.contact form button{
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+padding:15px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+font-size:16px;
+
+transition:.3s;
+
+}
+
+.contact form button:hover{
+
+background:#1d4ed8;
+
+}
