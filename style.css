@@ -1,4 +1,24 @@
 /* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+    --background:#ffffff;
+    --section:#f8fafc;
+    --text:#222222;
+
+    --radius:15px;
+
+    --shadow:
+    0 10px 30px rgba(0,0,0,.15);
+
+    --transition:.3s ease;
+
+}
+/* ===========================
    GLOBAL
 =========================== */
 html{
@@ -177,7 +197,7 @@ nav{
 
 .hero-content h3{
 
-    color:#2563eb;
+    color:var(--primary);
 
     margin-bottom:20px;
 
@@ -201,7 +221,7 @@ nav{
 
     border-radius:8px;
 
-    background:#2563eb;
+    background:var(--primary);
 
     color:white;
 
@@ -277,7 +297,7 @@ nav{
 
     margin-top:25px;
 
-    color:#2563eb;
+    color:var(--primary);
 
 }
 
@@ -299,7 +319,7 @@ nav{
 
     border-radius:8px;
 
-    background:#2563eb;
+    background:var(--primary);
 
     color:white;
 
@@ -372,7 +392,7 @@ nav{
 
 .skill-card h3{
 
-    color:#2563eb;
+    color:var(--primary);
 
     margin-bottom:15px;
 
@@ -427,7 +447,7 @@ margin-top:20px;
 
 padding:12px 25px;
 
-background:#2563eb;
+background:var(--primary);
 
 border:none;
 
@@ -609,6 +629,30 @@ background:white;
 .contact{
 
 background:#F8FAFC;
+
+}
+.profile{
+
+    width:300px;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+    transition:all .4s ease;
+
+}
+.profile:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
 
 }
 
