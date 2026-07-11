@@ -197,3 +197,84 @@ topBtn.addEventListener("click",()=>{
 });
 
 }
+/* ===========================
+   CONTACT FORM
+=========================== */
+const contactForm = document.getElementById("contactForm");
+const submitBtn = contactForm.querySelector("button");
+
+contactForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  submitBtn.disabled = true;
+  submitBtn.innerText = "Sending...";
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+  if (!name || !email || !message) {
+  Swal.fire({
+    icon: "warning",
+    title: "Missing Fields",
+    text: "Please fill all the fields.",
+  });
+
+  submitBtn.disabled = false;
+  submitBtn.innerText = "Send Message";
+  return;
+}
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (!emailRegex.test(email)) {
+  Swal.fire({
+    icon: "warning",
+    title: "Invalid Email",
+    text: "Please enter a valid email address.",
+  });
+
+  submitBtn.disabled = false;
+  submitBtn.innerText = "Send Message";
+  return;
+}
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      Swal.fire({
+        icon: "success",
+        title: "Message Sent!",
+        text: data.message,
+        confirmButtonColor: "#3085d6",
+      });
+
+      contactForm.reset();
+    } else {
+      throw new Error(data.message);
+    }
+  } catch (error) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops!",
+      text: "Something went wrong!",
+      confirmButtonColor: "#d33",
+    });
+
+    console.log(error);
+  }
+
+  submitBtn.disabled = false;
+  submitBtn.innerText = "Send Message";
+});

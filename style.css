@@ -737,11 +737,25 @@ background:#F8FAFC;
         padding:0 10px;
     }
 
-    .hero-content button{
-        width:220px;
-        margin-top:30px;
+    .hero-content .btn{
+    display:inline-block;
+    width:220px;
+    margin-top:30px;
+    padding:14px 25px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
     }
 
+    .hero-content .btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+    }
+    
     /* About */
 
     .about{
