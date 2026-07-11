@@ -8,7 +8,7 @@ A modern Full Stack Portfolio Website built using **Node.js, Express.js, MongoDB
 
 ## 📸 Preview
 
-(Add a screenshot here later)
+![Portfolio Preview](preview.png)
 
 ---
 
