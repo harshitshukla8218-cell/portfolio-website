@@ -58,15 +58,15 @@ export default function ProjectsSection() {
       category: 'Calculations & Astrology',
       context: 'Vedic Astrology Platform',
       brief:
-        'Precision astronomical calculation platform utilizing NASA JPL ephemeris, Skyfield, and Lahiri Sidereal conversion for automated birth chart generation and consultation management.',
+        'Precision astronomical calculation platform utilizing NASA JPL ephemeris, Skyfield, and Lahiri Sidereal conversion for automated birth chart generation and consultation appointment scheduling.',
       description:
         'Calculates exact planetary coordinates using Skyfield and JPL DE421 ephemeris based on exact birthplace geocoding. Automatically renders private Kundli chart PDFs, handles consultation scheduling, and manages user birth profiles with SQLite/PostgreSQL persistence.',
       tech: ['Python', 'Flask', 'Skyfield', 'JPL Ephemeris', 'PostgreSQL', 'SQLite', 'ReportLab PDF'],
       keyHighlights: [
-        'Astronomical calculations for planetary longitude using JPL DE421 ephemeris',
-        'Lahiri sidereal conversion with whole-sign Vedic house systems',
+        'Astronomical calculations for planetary longitude using JPL DE421 ephemeris & Skyfield',
+        'Lahiri sidereal conversion with whole-sign Vedic house systems & birth chart rendering',
         'Automated generation and secure streaming of private Kundli report PDFs',
-        'Geocoding integration with OpenStreetMap Nominatim for precise coordinates',
+        'Geocoding integration with OpenStreetMap Nominatim for exact geographic coordinates',
       ],
       icon: Sparkles,
       badge: 'Astronomical Engine',
