@@ -144,6 +144,7 @@ def build_resume(pdf_path):
     contact_line = (
         "Hathras, UP, India &nbsp;|&nbsp; +91 8273989136 &nbsp;|&nbsp; "
         "<a href='mailto:harshitshukla8218@gmail.com' color='#0284C7'><u>harshitshukla8218@gmail.com</u></a> &nbsp;|&nbsp; "
+        "<a href='https://portfolio-website-two-nu-77.vercel.app' color='#0284C7'><u>portfolio-website-two-nu-77.vercel.app</u></a><br/>"
         "<a href='https://www.linkedin.com/in/harsh-shukla-214196364' color='#0284C7'><u>linkedin.com/in/harsh-shukla</u></a> &nbsp;|&nbsp; "
         "<a href='https://github.com/harshitshukla8218-cell' color='#0284C7'><u>github.com/harshitshukla8218-cell</u></a>"
     )
