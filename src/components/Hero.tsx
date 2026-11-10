@@ -4,6 +4,7 @@ import {
   Copy,
   Check,
   MapPin,
+  FileDown,
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { GithubIcon, LinkedinIcon } from './Icons';
@@ -146,6 +147,16 @@ export default function Hero() {
               >
                 <span>View Projects</span>
                 <ArrowRight className="w-4 h-4" />
+              </a>
+
+              <a
+                href="/Harsh_Shukla_Resume.pdf"
+                download="Harsh_Shukla_Resume.pdf"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl text-sm font-medium text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-cyan-500/50 transition-all cursor-pointer shadow-sm"
+                title="Download Harsh Shukla's Resume (PDF)"
+              >
+                <FileDown className="w-4 h-4 text-cyan-400" />
+                <span>Resume (PDF)</span>
               </a>
 
               <button

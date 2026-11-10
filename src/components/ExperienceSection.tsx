@@ -14,6 +14,21 @@ interface ExperienceItem {
 export default function ExperienceSection() {
   const experiences: ExperienceItem[] = [
     {
+      role: 'Event & Technical Community Lead',
+      company: 'Tech Manthan Community (BSACET)',
+      type: 'Technical Community Leadership',
+      duration: '2024 - Present',
+      location: 'Mathura, India',
+      summary:
+        'Leading college technical community, driving hackathons, competitive programming workshops, and peer mentoring.',
+      responsibilities: [
+        'Organize college hackathons, coding contests, and technical bootcamps for 300+ engineering students.',
+        'Mentor junior peers in core data structures, modern full-stack web development (React & Node.js), and Git version control.',
+        'Coordinate speaker sessions and technical project exhibitions within the institution.',
+      ],
+      technologies: ['Community Leadership', 'Hackathons', 'Mentorship', 'Full-Stack Workshops', 'Git'],
+    },
+    {
       role: 'Full-Stack Developer',
       company: 'Client & Hackathon Projects',
       type: 'Contract & Team Projects',

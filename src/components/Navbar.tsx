@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileDown } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
 interface NavbarProps {
@@ -85,6 +85,16 @@ export default function Navbar({ onContactClick }: NavbarProps) {
             <LinkedinIcon className="w-4 h-4" />
           </a>
 
+          <a
+            href="/Harsh_Shukla_Resume.pdf"
+            download="Harsh_Shukla_Resume.pdf"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-medium text-slate-200 bg-slate-800/80 hover:bg-slate-700 hover:text-white border border-slate-700/60 transition-colors"
+            title="Download Harsh Shukla's Resume"
+          >
+            <FileDown className="w-3.5 h-3.5 text-cyan-400" />
+            <span>Resume</span>
+          </a>
+
           <button
             onClick={onContactClick}
             className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition-colors cursor-pointer"
@@ -138,15 +148,25 @@ export default function Navbar({ onContactClick }: NavbarProps) {
                 <LinkedinIcon className="w-4 h-4" />
               </a>
             </div>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onContactClick();
-              }}
-              className="px-4 py-2 text-xs font-semibold text-slate-950 bg-cyan-400 rounded-lg"
-            >
-              Contact Me
-            </button>
+            <div className="flex items-center gap-2">
+              <a
+                href="/Harsh_Shukla_Resume.pdf"
+                download="Harsh_Shukla_Resume.pdf"
+                className="px-3 py-2 text-xs font-semibold text-slate-200 bg-slate-800 border border-slate-700 rounded-lg flex items-center gap-1.5"
+              >
+                <FileDown className="w-3.5 h-3.5 text-cyan-400" />
+                <span>Resume</span>
+              </a>
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onContactClick();
+                }}
+                className="px-4 py-2 text-xs font-semibold text-slate-950 bg-cyan-400 rounded-lg"
+              >
+                Contact Me
+              </button>
+            </div>
           </div>
         </div>
       )}
