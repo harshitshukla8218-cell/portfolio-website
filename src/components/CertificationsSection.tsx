@@ -1,4 +1,4 @@
-import { Award, GraduationCap, Users, FileDown } from 'lucide-react';
+import { Award, GraduationCap, Users } from 'lucide-react';
 
 interface CertificationItem {
   title: string;
@@ -133,24 +133,6 @@ export default function CertificationsSection() {
               </div>
             );
           })}
-        </div>
-
-        {/* Download Resume Banner */}
-        <div className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-900/90 to-slate-950 border border-cyan-500/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-          <div>
-            <h4 className="text-base font-bold text-white">Looking for the complete resume?</h4>
-            <p className="text-xs sm:text-sm text-slate-400 mt-0.5">
-              Download the ATS-friendly PDF version containing detailed projects, academics, and coursework.
-            </p>
-          </div>
-          <a
-            href="/Harsh_Shukla_Resume.pdf"
-            download="Harsh_Shukla_Resume.pdf"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-xs text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition-colors shadow-md shadow-cyan-500/20 cursor-pointer shrink-0"
-          >
-            <FileDown className="w-4 h-4" />
-            <span>Download Resume (PDF)</span>
-          </a>
         </div>
       </div>
     </section>
